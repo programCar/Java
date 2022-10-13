@@ -91,6 +91,15 @@ public class Include_Strings {
             }
 
 
+            if(index<magazine.length()){
+
+                return "false";
+            }else{
+
+                return "true";
+            }
+
+
         }else{                                              //如果第一个字符串小于第二个字符串则采用这个进行判断
 
 
@@ -125,18 +134,17 @@ public class Include_Strings {
 
             }
 
+            if(index<ransomNote.length()){
+
+                return "false";
+            }else{
+
+                return "true";
+            }
+
 
         }
 
-
-
-        if(index<ransomNote.length()){
-
-            return "false";
-        }else{
-
-            return "true";
-        }
 
     }
 }
