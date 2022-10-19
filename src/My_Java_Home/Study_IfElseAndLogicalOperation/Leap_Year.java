@@ -1,7 +1,16 @@
-package My_Java_Home;
+package My_Java_Home.Study_IfElseAndLogicalOperation;
 
 import java.util.Scanner;
 
+/**
+ * Java课程，课后习题，逻辑语句的学习
+ * &&是短路逻辑运算符与，||是短路逻辑运算符或，！是逻辑运算符非
+ * &是逻辑运算符与，|是逻辑运算符或
+ * 区别:
+ * &&短路运算，一旦一端为假，另一端则不参与计算，&不是短路运算，就算一端为假，另一端也参与计算
+ * ||短路运算，一旦一端为真，另一端则不参与计算，|不是短路计算，就是一端为真，另一端也参与计算
+ * 逻辑运算符是二目运算符
+ */
 public class Leap_Year {
 
 

@@ -1,4 +1,4 @@
-package My_Java_Home;
+package My_Java_Home.Study_LogicalOperation;
 
 import java.util.Scanner;
 
