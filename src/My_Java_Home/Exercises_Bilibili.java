@@ -1,11 +1,8 @@
 package My_Java_Home;
 
-
 import java.util.ArrayList;
 
-
 import java.util.Random;
-
 
 import java.util.Scanner;
 
@@ -25,28 +22,22 @@ import java.util.Scanner;
  *由于arr_List集合内相同的值都被删除，所以留下来的都是不相同的值，只需要计算出arr_List集合内元素的个数作为数据返回即可
  *
  */
-
-
 public class Exercises_Bilibili {
 
 
     public static void main(String[] args) {
 
-
         Scanner scan = new Scanner(System.in);
-
 
         System.out.println("请问您想要输入多少个数字 :");
 
+        //用于接收用户输入并且作为创建数组空间的大小的依据
+        int enter_Number = scan.nextInt();
 
-        int enter_Number = scan.nextInt();                      //用于接收用户输入并且作为创建数组空间的大小的依据
-
-
-        int[] arr = new int[enter_Number];                      //用于储存用户想要输入的数据
-
+        //用于储存用户想要输入的数据
+        int[] arr = new int[enter_Number];
 
         System.out.println("请输入您想要输入的数字 :");
-
 
         for (int i = 0; i < enter_Number; i++){
 
@@ -54,16 +45,13 @@ public class Exercises_Bilibili {
 
         }
 
-
         System.out.println("请输入您想要删除数字的数目 :");
 
-
-        int delete_Number = scan.nextInt();                     //用于接受用户想要删除的数量
-
+        //用于接受用户想要删除的数量
+        int delete_Number = scan.nextInt();
 
         System.out.println("您输入的数据，在被您移除" + enter_Number + "个元素后，还剩下" +
                 findDeletedNumOfDifferenceNumber(arr,delete_Number) + "个不同的数字");
-
 
     }
 
@@ -71,60 +59,62 @@ public class Exercises_Bilibili {
 
     public static int findDeletedNumOfDifferenceNumber(int[] arr, int k) {
 
+        //用于储存arr数组的数据，方便以后对这些数据的处理和对原数据的保护
+        ArrayList<Integer> arr_List = new ArrayList<>();
 
-            ArrayList<Integer> arr_List = new ArrayList<>();    //用于储存arr数组的数据，方便以后对这些数据的处理和对原数据的保护
+        //用于发现移除K个元素后，arr_List集合内相同的值
+        int common_Number = 0;
 
+        //用于生成随机数，实现题目移除数据位置随机的逻辑
+        Random random = new Random();
 
-            int common_Number = 0;                              //用于发现移除K个元素后，arr_List集合内相同的值
+        //用于储存生成的随机数
+        int random_Number = 0;
 
+        //将arr数组数据搬到arr_List集合中，起到对arr数组数据的保护和方便对数据的处理
+        for(int i = 0; i < arr.length; i++){
 
-            Random random = new Random();                       //用于生成随机数，实现题目移除数据位置随机的逻辑
+            arr_List.add(arr[i]);
 
+        }
 
-            int random_Number = 0;                              //用于储存生成的随机数
+        //用于随机移除K位元素
+        for(int i = 0; i < k; i++){
 
+            random_Number = random.nextInt(arr_List.size());
 
-            for(int i = 0; i < arr.length; i++){                //将arr数组数据搬到arr_List集合中，起到对arr数组数据的保护和方便对数据的处理
+            arr_List.remove(random_Number);
 
-                arr_List.add(arr[i]);
+        }
 
-            }
+        //如果arr_List集合内元素在移除后只剩下一个则不参与以下计算直接返回1
+        if(arr_List.size() == 1){
 
+            return 1;
 
-            for(int i = 0; i < k; i++){                         //用于随机移除K位元素
+        }
 
-                random_Number = random.nextInt(arr_List.size());
+        //用于删除arr_List集合内相同的值
+        for(int i = 0; i < arr_List.size()-1; i++){
 
-                arr_List.remove(random_Number);
+            common_Number = arr_List.get(i).intValue();
 
-            }
+            //用于发现arr_List集合内相同的值
+            for(int j = i+1; j < arr_List.size(); j++){
 
+                if (common_Number == arr_List.get(j).intValue()){
 
-            if(arr_List.size() == 1){                           //如果arr_List集合内元素在移除后只剩下一个则不参与以下计算直接返回1
-
-                return 1;
-
-            }
-
-
-            for(int i = 0; i < arr_List.size()-1; i++){         //用于删除arr_List集合内相同的值
-
-                common_Number = arr_List.get(i).intValue();
-
-                for(int j = i+1; j < arr_List.size(); j++){     //用于发现arr_List集合内相同的值
-
-                    if (common_Number == arr_List.get(j).intValue()){
-
-                        arr_List.remove(j);                     //删除arr_List集合内相同的值
-                    }
-
+                    //删除arr_List集合内相同的值
+                    arr_List.remove(j);
                 }
 
             }
 
-
-            return arr_List.size();                             //返回arr_List集合的长度，实现找出删除后数组中不同整数的最少数目
-
         }
+
+        //返回arr_List集合的长度，实现找出删除后数组中不同整数的最少数目
+        return arr_List.size();
+
+    }
 
 }
