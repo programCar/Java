@@ -3,7 +3,7 @@ package My_Java_Home.Study_ConditionalOperator;
 import java.util.Scanner;
 
 /**
- * Java课程，课后习题，条件运算符的学习
+ * Java课程，课后习题，条件运算符的学习(找出三个整数中的最大值和最小值)
  * 条件运算符是三目运算符,他是Java中唯一一个三目运算符
  */
 public class ThreeNumber_MaxOrMin {

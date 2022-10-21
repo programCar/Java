@@ -3,7 +3,7 @@ package My_Java_Home.Study_PackageAndImport;
 import java.util.Scanner;
 
 /**
- * Java课程，课后习题，学习import和package语句
+ * Java课程，课后习题，学习import和package语句(求一个四位数的数字之和)
  * 包是一个相对独立的软件单元
  * import语句用于导入某包中的类
  * 包类似于文件夹，文件夹里有很多类，包也可以有子包（就是文件夹里还有文件夹）

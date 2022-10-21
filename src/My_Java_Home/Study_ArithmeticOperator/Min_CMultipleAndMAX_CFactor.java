@@ -2,6 +2,10 @@ package My_Java_Home.Study_ArithmeticOperator;
 
 import java.util.Scanner;
 
+/**
+ * Java课程，课后练习，do...while（）的学习(求两个正整数的最大公约数和最小公倍数)
+ * do...while（）先执行循环体，再进行循环条件判断
+ */
 public class Min_CMultipleAndMAX_CFactor {
 
 

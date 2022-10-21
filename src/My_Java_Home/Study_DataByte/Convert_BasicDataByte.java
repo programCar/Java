@@ -1,7 +1,7 @@
 package My_Java_Home.Study_DataByte;
 
 /**
- * Java课程,课后习题，基本数据类型转换
+ * Java课程,课后习题，基本数据类型转换（基本数据类型转换）
  * byte->short->char->int->long->float->double
  * 总结:Java基本数据类型的转换方向可以是，根据基本数据类型所占内存的大小，从小到大转换
  * 基本数据类型的转换，需要用到()，然后把要转为数据类型写进()中，如（int）'A'

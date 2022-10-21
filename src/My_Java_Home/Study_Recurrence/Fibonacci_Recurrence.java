@@ -3,7 +3,8 @@ package My_Java_Home.Study_Recurrence;
 import java.util.Scanner;
 
 /**
- *@author ZengYuanQuan(programCar)
+ *Java课程，课后练习，递推的学习(斐波那契，递推实现)
+ * 递推（自我理解）:就是从现在推往未来，按某种规律依次得到结果的方式
  */
 public class Fibonacci_Recurrence {
 

@@ -3,7 +3,8 @@ package My_Java_Home.Study_Recursion;
 import java.util.Scanner;
 
 /**
- * @author ZengYuanQuan(programCar)
+ * Java课程，课后练习，递归的学习(斐波那契，递归实现)
+ * 递归（自我理解）:从未来推向现在，然后回溯，依次得到结果
  */
 public class Fibonacci_Recursion {
 

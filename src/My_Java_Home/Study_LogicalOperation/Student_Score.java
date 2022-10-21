@@ -3,7 +3,7 @@ package My_Java_Home.Study_LogicalOperation;
 import java.util.Scanner;
 
 /**
- * Java课程，课后习题，判断语句（分支语句）的学习和逻辑运算符的掌握
+ * Java课程，课后习题，判断语句（分支语句）的学习和逻辑运算符的掌握(输入一个学生的成绩，判断其成绩等级并输出成绩等级)
  * Java的判断语句if()括号里面的值跟C语言的不一样，C语言中的是0是假，1是真，但Java不能是0，1判断
  * Java的判断语句if()括号里面只能是布尔变量true和false，true代表真，false代表假
  * 特别注意:&&和||是短路计算，&&只要一端为假，则另一端不进行运算，||只要一端为真，则另一端不参与运算

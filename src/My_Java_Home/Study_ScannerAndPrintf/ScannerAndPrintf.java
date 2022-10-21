@@ -3,7 +3,7 @@ package My_Java_Home.Study_ScannerAndPrintf;
 import java.util.Scanner;
 
 /**
- * Java课程，课后习题,输入输出的学习
+ * Java课程，课后习题,输入输出的学习(输入和输出的程序)
  *
  * Java的输出类似于C语言的输出，但Java的输出是System.out.printf();
  * Java的输出有两种，System.out.println();  System.out.printf();

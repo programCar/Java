@@ -3,7 +3,7 @@ package My_Java_Home.Study_LogicalOperation;
 import java.util.Scanner;
 
 /**
- * Java课程，学习switch()的使用
+ * Java课程，学习switch()的使用(显示数字对应的星期几)
  */
 public class Week {
 

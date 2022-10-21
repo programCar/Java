@@ -3,7 +3,7 @@ package My_Java_Home.Study_IfElseAndLogicalOperation;
 import java.util.Scanner;
 
 /**
- * Java课程，课后习题，逻辑语句的学习
+ * Java课程，课后习题，逻辑语句的学习（输入一个年份，判断是否为闰年）
  * &&是短路逻辑运算符与，||是短路逻辑运算符或，！是逻辑运算符非
  * &是逻辑运算符与，|是逻辑运算符或
  * 区别:

@@ -1,7 +1,7 @@
 package My_Java_Home.Study_LoopStatement;
 
 /**
- * @author:ZengYuanQuan(programCar)
+ * Java课程，课后练习（九九乘法表）
  */
 public class Java_Haskell {
 

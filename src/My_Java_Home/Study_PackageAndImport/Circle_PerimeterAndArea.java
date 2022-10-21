@@ -3,7 +3,7 @@ package My_Java_Home.Study_PackageAndImport;
 import java.util.Scanner;
 
 /**
- * Java课程,课后习题,对package语句和import语句的学习使用
+ * Java课程,课后习题,对package语句和import语句的学习使用(求圆的周长和面积)
  * 此类在My_Java_Home包的Study_PackageAndImport包中
  * 此类导入了java包中子包util中的Scanner类
  * 此类还使用了Math类中的静态变量PI和静态方法pow()
